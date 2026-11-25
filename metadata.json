@@ -1,0 +1,6 @@
+{
+  "name": "CTET Paper 1 Practice — Bilingual",
+  "description": "Clean, ad-free CTET Paper 1 (Classes I to V) previous year question papers practice platform with English, Hindi, and Bilingual (English + Hindi) modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

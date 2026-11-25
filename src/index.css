@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #0f172a;
+    overscroll-behavior-y: contain;
+  }
+
+  button,
+  a,
+  [role="button"],
+  [role="radio"],
+  [role="tab"] {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  [lang="hi"] {
+    font-family: "Noto Sans Devanagari", "Plus Jakarta Sans", sans-serif;
+    line-height: 1.65;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.pb-safe {
+  padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.ctet-rich-html {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.ctet-rich-html img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.ctet-rich-html table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  font-size: 0.9em;
+}
+
+.ctet-rich-html th,
+.ctet-rich-html td {
+  border: 1px solid #cbd5e1;
+  padding: 0.35rem 0.6rem;
+}
+
+.ctet-rich-html .katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+.ctet-rich-html .katex {
+  font-size: 1.04em;
+}
+
+.ctet-rich-html b,
+.ctet-rich-html strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+
